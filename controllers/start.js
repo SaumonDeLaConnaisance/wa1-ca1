@@ -1,6 +1,7 @@
 'use strict';
 
 import logger from "../utils/logger.js";
+import appStore from "../models/app-store.js";
 import perfumes from "../models/perf-store.js";
 
 const start = {
@@ -9,10 +10,11 @@ const start = {
     
     const viewData = {
       title: "CA1 Starter App",
-      info: perfumes.getPerfInfo()
+      appStore: appStore.getAppInfo(),
+      perfumeCount: perfumes.getPerfCount()
     };
     
-    response.render('start', viewData);   
+    response.render('start', viewData);  
   },
 };
 
