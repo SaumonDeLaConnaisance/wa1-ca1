@@ -1,0 +1,125 @@
+{
+    "perfumeCollection": [
+        {
+            "id": "01",
+            "houseName": "Jean Paul Gaultier",
+            "perfumes": [
+                {
+                    "id": "02",
+                    "gender": "Male",
+                    "name": "Le Beau Le Parfum",
+                    "concentration": "EDP",
+                    "topNotes": [
+                        "Coconut",
+                        "Wood"
+                    ],
+                    "middleNotes": [
+                        "Tonka bean"
+                    ],
+                    "baseNotes": [
+                        "Sandalwood"
+                    ],
+                    "description": "When Jean Paul Gaultier created this perfect new nude, Le Beau Le Parfum, it wasn’t to keep it covered up! In this Garden of Eden amidst abundant nature, a simple gold vine leaf plucked from the iconic green box is more than enough to clothe the muscled black and green lacquered torso bottle. And if the seductive powers of Gaultier’s new intense eau de parfum are extra sensual, so much the better as nothing is off limits here. All you have to do is take a bite of the forbidden fruit with its fresh and addictive amber woodiness."
+                },
+                {
+                    "id": "03",
+                    "gender": "Male",
+                    "name": "Le Mâle Le Parfum",
+                    "concentration": "EDP",
+                    "topNotes": [
+                        "Cardamom"
+                    ],
+                    "middleNotes": [
+                        "Lavender",
+                        "Iris"
+                    ],
+                    "baseNotes": ["Vanilla"],
+                    "description": "The latest men's fragrance by Jean Paul Gaultier, Le Male Le Parfum, is about to set sail! Dressed in a black and gold officer’s jacket, this intense eau de parfum is taking leadership of the Le Male range with great style and strength. An elegant woody oriental trail capturing the charisma and power of a leader. Attention sailors! The captain has arrived and we’re about to set sail."
+                }
+            ]
+        },
+        {
+            "id": "02",
+            "houseName": "Creed",
+            "perfumes": [
+                {
+                    "id": "04",
+                    "gender": "Male",
+                    "name": "Aventus",
+                    "concentration": "EDP",
+                    "topNotes": [
+                        "Bergamot",
+                        "Apple",
+                        "Blackcurrant",
+                        "Lemon",
+                        "Pink pepper"
+                    ],
+                    "middleNotes": [
+                        "Pineapple",
+                        "Indian patchouli",
+                        "Jasmine"
+                    ],
+                    "baseNotes": [
+                        "Birch",
+                        "Ambergris",
+                        "Cedarwood",
+                        "Oakmoss",
+                        "Musk"
+                    ],
+                    "description": "Captivate from business to bar and beyond with Aventus, the most revered fragrance from The House of Creed featuring dynamic pineapple and a sophisticated smoky edge."
+                },
+                {
+                    "id": "05",
+                    "gender": "Unisex",
+                    "name": "Virgin Island Water",
+                    "concentration": "EDP",
+                    "topNotes": [
+                        "Bergamot",
+                        "Key lime",
+                        "Tropical fruits"
+                    ],
+                    "middleNotes": [
+                        "Coconut water",
+                        "Coconut milk",
+                        "Jasmine",
+                        "White blossoms"
+                    ],
+                    "baseNotes": [
+                        "Tonka bean",
+                        "White musk"
+                    ],
+                    "description": "Virgin Island Water is a fresh and uplifting fragrance that captures the warmth and sunlit splendour of the Caribbean with zesty citrus notes and creamy coconut."
+                }
+            ]
+        },
+        {
+            "id": "03",
+            "houseName": "Diptyque",
+            "perfumes":[
+                {
+                    "id": "06",
+                    "gender": "Unisex",
+                    "name": "L'Ombre dans L'eau",
+                    "concentration": "EDP",
+                    "topNotes":[
+                        "Bergamot",
+                        "Rose",
+                        "Cassis",
+                        "Blackcurrant",
+                        "Mandarin"
+                    ],
+                    "middleNotes":[
+                        "Blackcurrant leaf",
+                        "Ambergris",
+                        "Musk"
+                    ],
+                    "baseNotes":[
+                        "Amber",
+                        "Myrrh"
+                    ],
+                    "description": "A fragrance with pictorial qualities. The green of blackcurrant leaves mingles with the tart, fruity notes of blackcurrant buds and the floral intensity of rose."
+                }
+            ]
+        }
+    ]
+}

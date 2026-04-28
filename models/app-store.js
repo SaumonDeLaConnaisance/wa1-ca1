@@ -9,7 +9,7 @@ const appStore = {
   collection: 'info',
   array: 'creators',
 
-  getAppInfo() {
+  getPerfInfo() {
     return this.store.findAll(this.collection);
   },
 
