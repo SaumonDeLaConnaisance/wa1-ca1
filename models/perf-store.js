@@ -5,7 +5,7 @@ import JsonStore from './json-store.js';
 
 const perfumes = {
 
-  store: new JsonStore('./models/app-store.json', { perfumeCollection: [] }),
+  store: new JsonStore('./models/perfCollection.json', { perfumeCollection: ["perfumes"] }),
   collection: 'perfumeCollection',
   array: 'perfumes',
 
@@ -14,11 +14,15 @@ const perfumes = {
   },
 
   getPerfCount() {
-    const collection = this.store.findAll(this.collection);
+    // getPerfInfo() already returns the array of houses
+    const collection = this.getPerfInfo(); 
     let total = 0;
 
-    for (const house of collection) {
-      total += house.perfumes.length;
+    // Check if collection exists and is an array before looping
+    if (collection && Array.isArray(collection)) {
+      for (const house of collection) {
+        total += house.perfumes.length;
+      }
     }
 
     return total;

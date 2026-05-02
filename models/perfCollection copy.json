@@ -1,0 +1,26 @@
+{
+    "perfumeCollection": [
+        {
+            "id": "cfa02789-c39a-4d29-bd1d-6ac16be3b7ba",
+            "target": "male",
+            "house": "Jean Paul Gaultier",
+            "name": "Le Beau Le Parfum",
+            "concentration": ["EDP"],
+            "top": ["Coconut", "Wood"],
+            "middle": ["Tonka bean"],
+            "base": ["Sandalwood"],
+            "desc": "When Jean Paul Gaultier created this perfect new nude, Le Beau Le Parfum, it wasn’t to keep it covered up! In this Garden of Eden amidst abundant nature, a simple gold vine leaf plucked from the iconic green box is more than enough to clothe the muscled black and green lacquered torso bottle. And if the seductive powers of Gaultier’s new intense eau de parfum are extra sensual, so much the better as nothing is off limits here. All you have to do is take a bite of the forbidden fruit with its fresh and addictive amber woodiness."
+        },
+        {
+            "id": "4bd642b0-e07e-4c7e-86c0-9bf15d40f0c5",
+            "target": "male",
+            "house": "Jean Paul Gaultier",
+            "name": "Le Mâle Le Parfum",
+            "concentration": ["EDP"],
+            "top": ["Cardamom"],
+            "middle": ["Lavender", "Iris"],
+            "base": ["Vanilla"],
+            "desc": "The latest men's fragrance by Jean Paul Gaultier, Le Male Le Parfum, is about to set sail! Dressed in a black and gold officer’s jacket, this intense eau de parfum is taking leadership of the Le Male range with great style and strength. An elegant woody oriental trail capturing the charisma and power of a leader. Attention sailors! The captain has arrived and we’re about to set sail."
+        }
+    ]
+}

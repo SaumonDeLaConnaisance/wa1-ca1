@@ -2,22 +2,20 @@
 
 <section class="ui left aligned middle aligned segment">
   
-  <h2>Playlist App Dashboard</h2>
+    <h2>Playlist App Dashboard</h2>
+`
+      {{#each perfumes}}
+      <section class="ui left aligned middle aligned segment">
+        <h3 class="ui header">
+          {{playlists.0.title}}
+        </h3>
+      </section>
   
-  {{#unless perfumes}}
-    <h3 class="ui message">
-      Start adding your playlists!
-    </h3>
-  {{/unless}}
-
-  {{#each perfumes}}
-    <section class="ui left aligned middle aligned segment">
-
-      <h3 class="ui header">
-        {{title}}
-      </h3>
-      <a href="#"> View </a>
-    </section>
-  {{/each}}
+      <section class="ui left aligned middle aligned segment">
+        <h3 class="ui header">
+          {{playlists.1.title}}
+        </h3>
+      </section>
+      {{/each}}
 
 </section>
