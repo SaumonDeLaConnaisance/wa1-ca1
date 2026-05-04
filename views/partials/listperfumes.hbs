@@ -1,0 +1,33 @@
+{{#if singlePerfume.perfumes}}
+      <table class="ui unstackable striped table">
+  <thead>
+    <tr>
+      <th>Perfume</th>
+      <th>Target</th>
+      <th>Concentration</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each singlePerfume.perfumes}}
+      <tr>
+        <td>
+          {{name}}
+        </td>
+        <td>
+          {{gender}}
+        </td>
+        <td>{{concentration}}</td>
+        <td>
+          <ul>
+            <li>Top notes: {{topNotes}} </li>
+            <li>Middle notes: {{middleNotes}}</li>
+            <li>Base notes: {{baseNotes}}</li>
+          </ul>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+{{/if}}

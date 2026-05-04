@@ -7,27 +7,19 @@ const perfumes = {
 
   store: new JsonStore('./models/perfCollection.json', { perfumeCollection: [ {} ] }),
   collection: 'perfumeCollection',
-  array: 'perfumes',
+  array: "perfumes",
 
   getPerfInfo() {
     return this.store.findAll(this.collection);
   },
 
   getPerfCount() {
-    // getPerfInfo() already returns the array of houses
-    const collection = this.getPerfInfo(); 
-    let total = 0;
+    const perfCol = perfumes.getPerfInfo();
+  },
 
-    // Check if collection exists and is an array before looping
-    if (collection && Array.isArray(collection)) {
-      for (const house of collection) {
-        total += house.perfumes.length;
-      }
-    }
-
-    return total;
+  getPerfume(id) {
+    return this.store.findOneBy(this.collection, (perfumeCollection => perfumeCollection.id === id));
   }
-
 };
 
 export default perfumes;

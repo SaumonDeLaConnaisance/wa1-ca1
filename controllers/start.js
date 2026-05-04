@@ -13,8 +13,8 @@ const start = {
     const viewData = {
       title: "CA1 Starter App",
       appStore: appStore.getAppInfo(),
-      pperfumes: {
-        perfumeCount: perfumes.getPerfInfo(),
+      perfumes: {
+        perfumeCount: perfumes.getPerfCount(),
       },
     };
     

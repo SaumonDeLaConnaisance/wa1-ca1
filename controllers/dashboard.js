@@ -9,10 +9,10 @@ const dashboard = {
 
         const viewData = {
             title: "Perfumes",
-            houses: perfStore.getPerfInfo()
+            house: perfStore.getPerfInfo()
         };
 
-        Logger.debug(viewData.houses);
+        Logger.debug(viewData.house);
         
         response.render('dashboard', viewData);
     },

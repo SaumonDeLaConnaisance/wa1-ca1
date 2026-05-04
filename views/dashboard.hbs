@@ -4,19 +4,22 @@
   
   <h2>Playlist App Dashboard</h2>
   
-  {{#unless perfumes}}
+  {{#unless house}}
     <h3 class="ui message">
       Start adding your perfumes
     </h3>
   {{/unless}}
 
-  {{#each PerfumesList}}
+  {{#each house}}
     <section class="ui left aligned middle aligned segment">
 
       <h3 class="ui header">
         {{houseName}}
       </h3>
-      <a href="#"> View </a>
+      <a href="/perfumes/{{id}}">View</a>
+
+  
+
     </section>
   {{/each}}
 

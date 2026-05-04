@@ -120,6 +120,22 @@
                     "description": "A fragrance with pictorial qualities. The green of blackcurrant leaves mingles with the tart, fruity notes of blackcurrant buds and the floral intensity of rose."
                 }
             ]
-        }
+        },
+        {
+            "id": "04",
+            "houseName": "Byredo",
+            "perfumes": [
+                {
+                "id": "07",
+                "gender": "Unisex",
+                "name": "Bal d'Afrique",
+                "concentration": "EDP",
+                "topNotes": ["Bergamot", "Buchu", "African Marigold", "Blackcurrant"],
+                "middleNotes": ["Cyclamen", "Jasmine", "Violet"],
+                "baseNotes": ["Musk", "Vetiver", "Cedarwood", "Tonka bean absolute"],
+                "description": "Bal d’Afrique pays homage to the cultural heartbeat and enduring influence of Africa over time, particularly to the way its countless cultures have shaped dance, art, and music. The fragrance opens with the luminous freshness of bergamot, the bright floral touch of African marigold, and the rich juiciness of blackcurrant, creating an immediate sense of vibrancy and uplift. At its heart, a delicate yet textured blend of violet and cyclamen reflects the depth and complexity of African creativity and expression. A grounding base of cedarwood and vetiver wraps the skin in soft, woody depth, gently rounded by the comforting warmth of tonka bean and musks."
+                }
+            ]
+            }
     ]
 }
