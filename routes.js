@@ -13,6 +13,7 @@ import dashboard from './controllers/dashboard.js';
 router.get('/dashboard', dashboard.createView);
 import PerfumesList from './controllers/perfumes.js';
 router.get('/perfumes/:id', PerfumesList.createView);
+router.post('/perfumes/:id/addperfume', PerfumesList.addPerfume);
 
 router.get('/error', (request,response) => response.status(404).end('Page not found'));
 

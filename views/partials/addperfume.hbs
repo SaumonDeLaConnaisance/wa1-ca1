@@ -1,81 +1,115 @@
-<form class="ui compact segment form" "/perfumes/{{id}}/addperfume" method="POST">
-    <div class="field">
-      <label>House Name</label>
-      <input type="text" name="houseName" autofocus required title = "Please include a valid House Name"
-	  placeholder="House Name">
-    </div>
-    <div class="field">
-      <label>Name</label>
-      <input type="text" name="name" required title = "Please include a valid name for the perfume"
-	  placeholder="Name">
-    </div>
+<form class="ui compact segment form" action="/perfumes/{{id}}/addperfume" method="POST">
 
-    {{!-- Target --}}
-    <div class="grouped fields">
-        <label for="target">Target:</label>
-        <div class="field">
-            <div class="ui radio checkbox checked">
-                <input type="radio" name="target" checked="" tabindex="0">
-                <label>Male</label>
-            </div>
-        </div>
-        <div class="field">
-            <div class="ui radio checkbox">
-                <label>Female</label>
-            </div>
-        </div>
-        <div class="field">
-            <div class="ui radio checkbox">
-                <label>Unisex / N/A</label>
-            </div>
-        </div>
-    </div>
-
-    {{!-- Concentration --}}
-    <div class="grouped fields">
-        <label for="concentration">Concentration:</label>
-        <div class="field">
-            <div class="ui radio checkbox checked">
-                <input type="radio" name="concentration" checked="" tabindex="0">
-                <label>EDT</label>
-            </div>
-        </div>
-        <div class="field">
-            <div class="ui radio checkbox">
-                <label>EDP</label>
-            </div>
-        </div>
-        <div class="field">
-            <div class="ui radio checkbox">
-                <label>N/A</label>
-            </div>
-        </div>
-    </div>
-
-    {{!-- Top Notes --}}
-    <div class="field">
-    <label>Top Notes</label>
-    <input type="text" name="topNotes[]" placeholder="e.g. Bergamot">
-    <input type="text" name="topNotes[]" placeholder="e.g. Apple">
-    <input type="text" name="topNotes[]" placeholder="e.g. Lemon">
-    </div>
-
-    {{!-- Middle Notes --}}
-    <div class="field">
-    <label>Middle Notes</label>
-    <input type="text" name="middleNotes[]" placeholder="e.g. Lavender">
-    <input type="text" name="middleNotes[]" placeholder="e.g. Jasmine">
-    <input type="text" name="middleNotes[]" placeholder="e.g. Iris">
-    </div>
-
-    {{!-- Base Notes --}}
-    <div class="field">
-    <label>Base Notes</label>
-    <input type="text" name="baseNotes[]" placeholder="e.g. Vanilla">
-    <input type="text" name="baseNotes[]" placeholder="e.g. Sandalwood">
-    <input type="text" name="baseNotes[]" placeholder="e.g. Musk">
-    </div>
-
+  <div class="field">
+    <label>House Name</label>
+    <input
+      type="text"
+      name="houseName"
+      required
+      autofocus
+      placeholder="House Name"
+    >
   </div>
-  <button class="ui green submit button">Add Perfume!</button>
+
+  <div class="field">
+    <label>Name</label>
+    <input
+      type="text"
+      name="name"
+      required
+      placeholder="Perfume Name"
+    >
+  </div>
+
+  <!-- TARGET -->
+  <div class="grouped fields">
+    <label>Target</label>
+
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="target" value="Male" checked>
+        <label>Male</label>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="target" value="Female">
+        <label>Female</label>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="target" value="Unisex / N/A">
+        <label>Unisex / N/A</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCENTRATION -->
+  <div class="grouped fields">
+    <label>Concentration</label>
+
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="concentration" value="EDT" checked>
+        <label>EDT</label>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="concentration" value="EDP">
+        <label>EDP</label>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="ui radio checkbox">
+        <input type="radio" name="concentration" value="N/A">
+        <label>N/A</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOP NOTES -->
+  <div class="field">
+    <label>Top Notes</label>
+    <input type="text" name="topNotes[]" placeholder="Bergamot">
+    <input type="text" name="topNotes[]" placeholder="Apple">
+    <input type="text" name="topNotes[]" placeholder="Lemon">
+  </div>
+
+  <!-- MIDDLE NOTES -->
+  <div class="field">
+    <label>Middle Notes</label>
+    <input type="text" name="middleNotes[]" placeholder="Lavender">
+    <input type="text" name="middleNotes[]" placeholder="Jasmine">
+    <input type="text" name="middleNotes[]" placeholder="Iris">
+  </div>
+
+  <!-- BASE NOTES -->
+  <div class="field">
+    <label>Base Notes</label>
+    <input type="text" name="baseNotes[]" placeholder="Vanilla">
+    <input type="text" name="baseNotes[]" placeholder="Sandalwood">
+    <input type="text" name="baseNotes[]" placeholder="Musk">
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="field">
+    <label>Description</label>
+    <textarea
+      name="description"
+      rows="3"
+      placeholder="Write a description..."
+      required
+    ></textarea>
+  </div>
+
+  <button class="ui green button fluid" type="submit">
+    Add Perfume
+  </button>
+
 </form>

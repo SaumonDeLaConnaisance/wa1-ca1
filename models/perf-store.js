@@ -19,6 +19,10 @@ const perfumes = {
 
   getPerfume(id) {
     return this.store.findOneBy(this.collection, (perfumeCollection => perfumeCollection.id === id));
+  },
+
+  addPerfume(id, PerfumesList) {
+    this.store.addItem(this.collection, id, this.array, PerfumesList);
   }
 };
 
