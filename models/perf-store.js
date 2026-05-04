@@ -5,7 +5,7 @@ import JsonStore from './json-store.js';
 
 const perfumes = {
 
-  store: new JsonStore('./models/perfCollection.json', { perfumeCollection: ["perfumes"] }),
+  store: new JsonStore('./models/perfCollection.json', { perfumeCollection: [ {} ] }),
   collection: 'perfumeCollection',
   array: 'perfumes',
 

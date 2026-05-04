@@ -2,13 +2,13 @@
 
 import logger from '../utils/logger.js';
 
-const perfumes = {
+const PerfumesList = {
     createView(request, response) {
         const viewData = {
             title: 'Perfume'
         };
-        response.render('playlist',viewData)
+        response.render('perfume',viewData)
     }
 }
 
-export default perfumes;
+export default PerfumesList;

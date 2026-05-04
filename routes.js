@@ -11,8 +11,8 @@ import start from './controllers/start.js';
 router.get('/', start.createView);
 import dashboard from './controllers/dashboard.js';
 router.get('/dashboard', dashboard.createView);
-import perfumes from './controllers/perfumes.js';
-router.get('/perfumes/:id', perfumes.createView);
+import PerfumesList from './controllers/perfumes.js';
+router.get('/perfumes/:id', PerfumesList.createView);
 
 router.get('/error', (request,response) => response.status(404).end('Page not found'));
 

@@ -14,7 +14,7 @@ const start = {
       title: "CA1 Starter App",
       appStore: appStore.getAppInfo(),
       pperfumes: {
-        perfumeCount: perfumes.getPerfCount(),
+        perfumeCount: perfumes.getPerfInfo(),
       },
     };
     

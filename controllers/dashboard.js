@@ -12,6 +12,8 @@ const dashboard = {
             houses: perfStore.getPerfInfo()
         };
 
+        Logger.debug(viewData.houses);
+        
         response.render('dashboard', viewData);
     },
 };
