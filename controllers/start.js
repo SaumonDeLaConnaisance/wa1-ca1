@@ -8,14 +8,17 @@ const start = {
   createView(request, response) {
     logger.info("Start page loading!");
 
-    
+    let perfumeCollection = perfumes.getPerfInfo();
+    let perfumeCount = 0;
+
+    for(let house of perfumeCollection){
+      perfumeCount += house.perfumes.length;
+    }
     
     const viewData = {
       title: "CA1 Starter App",
       appStore: appStore.getAppInfo(),
-      perfumes: {
-        perfumeCount: perfumes.getPerfCount(),
-      },
+      perfumeCount: perfumeCount
     };
     
     response.render('start', viewData);  
